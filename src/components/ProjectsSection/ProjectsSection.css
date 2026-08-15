@@ -1,0 +1,123 @@
+.projects-section {
+    padding: 56px 46px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--light-section-background);
+    color: var(--dark-text);
+    min-height: 90vh;
+    gap: 48px;
+}
+
+.projects-grid {
+    width: 100%;
+    max-width: 1190px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 330px));
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.container-projects {
+    padding:  2rem 0;
+    height: 448px;
+    background: var(--dark-surface);
+    border: 1px solid var(--card-border);
+    box-shadow: 12px 17px 51px var(--card-shadow);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    user-select: none;
+    color: var(--button-hover-text);
+
+}
+.container-projects:hover{
+      transform: scale(1.06);
+      
+}
+
+
+.image-group {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    
+    margin-bottom: -8px;
+
+    
+}
+.container-lenguage{
+    width: 100%;
+    border-bottom: 2px solid var(--language-border);
+    border-radius: 0 0 10px 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--language-background);
+   
+
+}
+.span-lenguage{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+}
+.img-lenguage {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.texts-group{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2rem ;
+    flex: 1;
+    gap: 8px;
+    color: var(--light-text);
+    
+}
+.title-group{
+    min-height: 58px;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    overflow-wrap: anywhere;
+    display: flex;
+    align-items: center;
+}
+.texts-group .descript-group{
+    font-weight: 500;
+    font-size: small;
+    min-height: 50px;
+    text-align: center;
+}
+.button-group{
+    margin-top: auto;
+    padding: 6px 1rem;
+    border: none;
+    background: var(--button-background);
+    color: var(--accent-color);
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.5s, transform 0.5s;
+    cursor: pointer;
+}
+.button-group:hover{
+    background: var(--accent-color);
+    color: var(--dark-text);
+    transform: translateY(-2px);
+}
+.button-group:active {
+  transform: scale(0.95) rotateZ(1.4deg);
+}
+

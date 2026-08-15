@@ -1,0 +1,118 @@
+.skills-section {
+  padding: 56px 46px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: var(--dark-text);
+  min-height: 90vh;
+  background: radial-gradient(
+      circle at 20% 10%,
+      transparent,
+      transparent 40%
+    ),
+    radial-gradient(circle at 110% 50%, var(--section-gradient-end), transparent 20%),
+    var(--dark-background);
+}
+
+.skills-section-title {
+  padding-bottom: 20px;
+}
+
+.skills-grid {
+  width: 100%;
+  max-width: 1190px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 330px));
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+/* Card de vidro (glass): fundo quase transparente + blur.
+   O "blur" é o que faz o efeito de vidro fosco. */
+.skill-card {
+  box-sizing: border-box;
+  padding: 1.5rem 1rem;
+  min-height: 254px;
+  background: var(--glass-background);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 30px var(--glass-shadow);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 18px;
+  user-select: none;
+  font-weight: bolder;
+  color: var(--dark-text);
+
+  /* transition avisa o navegador: quando alguma dessas propriedades
+     mudar (ex: no hover), anime suavemente em vez de trocar na hora */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover simples: sobe um pouco e aumenta de leve.
+   Sem mouse-tracking, é só ":hover" puro do CSS. */
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--glass-border-hover);
+  box-shadow: 0 20px 45px var(--glass-shadow-hover), 0 0 30px var(--section-gradient-start);
+  
+}
+
+.skill-card:active {
+  transform: translateY(-4px) scale(0.98);
+}
+
+.skill-card h2 {
+  font-size: 35px;
+}
+
+.skill-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 80px);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-icon-card {
+  background: var(--glass-background);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 6px 20px var(--glass-shadow);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  font-size: 10px;
+  padding: 8px 4px;
+  color: var(--dark-text);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.skill-icon-card:hover {
+  border-color: var(--glass-border-hover);
+  transform: scale(1.06);
+}
+
+.skill-icon-card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.skill-icon-image {
+  width: 30px;
+}
+
+@media (max-width: 560px) {
+  .skills-section {
+    padding: 56px 20px;
+  }
+
+  .skills-grid {
+    gap: 2rem;
+  }
+}

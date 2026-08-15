@@ -1,0 +1,72 @@
+.app {
+  --primary-color: #111827;
+  --accent-color: #89a0c2;
+  --accent-hover: #ced9e7;
+  --muted-text: #cbd5e1;
+
+  --page-background: #05070d;
+  --light-section-background: #05070d;
+  --light-text: #ffffff;
+
+  --dark-background: #05070d;
+  --dark-surface: #0d1322;
+  --dark-text: #ffffff;
+
+  --navbar-background: rgba(0, 0, 0, 0.192);
+  --navbar-border: rgba(255, 255, 255, 0.12);
+  --mobile-menu-background: rgba(248, 250, 252, 0.96);
+  --mobile-menu-border: rgba(17, 24, 39, 0.12);
+  --mobile-menu-shadow: rgba(17, 24, 39, 0.16);
+
+  --card-background: #f9f9f9;
+  --card-border: rgba(255, 255, 255, 0.14);
+  --card-shadow: rgba(0, 0, 0, 0.35);
+
+  --glass-background: rgba(255, 255, 255, 0.045);
+  --glass-border: rgba(255, 255, 255, 0.14);
+  --glass-border-hover: rgba(255, 255, 255, 0.28);
+  --glass-shadow: rgba(0, 0, 0, 0.35);
+  --glass-shadow-hover: rgba(0, 0, 0, 0.45);
+
+  --language-background: #4c4e5e50;
+  --language-border: #78797c;
+  --button-background: rgba(240, 240, 241, 0.993);
+  --button-hover-text: #ffffff;
+
+  --section-gradient-start: rgba(125, 211, 252, 0.06);
+  --section-gradient-end: rgba(167, 139, 250, 0.178);
+}
+
+.app[data-theme='light'] {
+  --accent-color: #5179b4;
+   --accent-hover: #334e72;
+  --language-background: #f7f8fa50;
+  --language-border: #d1daf5;
+  --muted-text: #536279;
+  --page-background: #f8fafc;
+  --light-section-background: #fafafa;
+  --light-text: #131313;
+  --dark-background: #f8fafc;
+  --dark-surface: #f8f8fa;
+  --dark-text: #111827;
+  --navbar-background: rgba(248, 250, 252, 0.414);
+  --navbar-border: rgba(17, 24, 39, 0.12);
+  --glass-background: rgba(255, 255, 255, 0.78);
+  --glass-border: rgba(17, 24, 39, 0.12);
+  --glass-border-hover: rgba(17, 24, 39, 0.24);
+  --glass-shadow: rgba(15, 23, 42, 0.12);
+  --glass-shadow-hover: rgba(15, 23, 42, 0.18);
+  /* --card-background: #ffffff; */
+  --card-border: rgba(17, 24, 39, 0.16);
+  --card-shadow: rgba(0, 0, 0, 0.12);
+  --section-gradient-start: rgba(137, 160, 194, 0.2);
+  --section-gradient-end: rgba(14, 29, 46, 0.08);
+}
+
+.page {
+  background: var(--page-background);
+}
+
+.highlight {
+  color: var(--accent-color);
+}
