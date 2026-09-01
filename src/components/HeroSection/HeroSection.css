@@ -74,7 +74,7 @@
 
 @media (max-width: 1030px) {
   .hero-section {
-    padding: 64px 20px;
+    padding: 104px 20px;
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
